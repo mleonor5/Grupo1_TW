@@ -1,7 +1,43 @@
+*{
+    margin: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    background-color: antiquewhite;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
 li{
     list-style: none;
 }
 
 #logo{
     width: 150px;
+}
+
+#user{
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #ffbe00;
+    text-decoration: underline;
 }

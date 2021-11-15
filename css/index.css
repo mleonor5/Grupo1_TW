@@ -41,3 +41,17 @@ a:hover{
     color: #ffbe00;
     text-decoration: underline;
 }
+
+#carrinho{
+    position: relative;
+    display: flex;
+    left: 800px;
+    top: -40px;
+}
+
+#registerLogin{
+    position: relative;
+    display: flex;
+    left: 800px;
+    top: -70px;
+}

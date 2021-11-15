@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/registo.css">
+    <title>Registo do utilizador</title>
+</head>
+<body>
+    <form action="" id="form">
+        <h1>Cria a sua conta</h1><br>
+        <div>
+            <label for="txtName">Nome:</label>
+            <input type="text" name="txtname" id="txtName">
+        </div><br>
+        <div>
+            <label for="txtEmail">Email:</label>
+            <input type="email" name="txtEmail" id="txtEmail">
+        </div><br>
+        <div>
+            Género:
+            <input type="radio" name="gender" id="genderm" value="m" checked><label for="genderm">Masculino</label>
+            <input type="radio" name="gender" id="genderf" value="f"><label for="genderf">Feminino</label>
+        </div><br>
+        <div>
+            <label for="txtMorada">Morada:</label>
+            <input type="text" name="txtMorada" id="txtMorada">
+        </div><br>
+        <div>
+            <label for="txtNumber">Telemóvel:</label>
+            <input type="number" name="txtNumber" id="txtNumber">
+        </div><br>
+        <div>
+            <label for="txtPassword">Palavra-passe:</label>
+            <input type="password" name="txtPassword" id="txtPassword" minlength="8" placeholder="minimo 8 caracteres">
+        </div><br>
+        <div>
+            <label for="txtPassword">Repetir a palavra-passe:</label>
+            <input type="password" name="txtPassword" id="txtPassword">
+        </div><br>
+        <div>
+            <input type="submit" value="Submeter">
+        </div>
+    </form>
+</body>
+</html>

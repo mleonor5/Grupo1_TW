@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            left: 0;
+            right: 0;
+            padding: 0;
+            box-sizing: border-box;
+            align-items: center;
+            background-color:#AAB0B5;
+        }
+        #form{
+            position: relative;
+            text-align: center;
+            float: left;
+            left: 400px;
+            top: 50px;
+            border-radius: 20px;
+            border: 5px solid #fff;
+            width: 450px;
+            height: 350px;
+            background-color:#fff;
+        }
+
+        input[type=email]{
+            border: 1px solid black;
+            border-radius: 4px;
+            height: 20px;
+        }
+
+        input[type=password]{
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 20px;
+    }
+
+    input[type="submit"]{
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: #ffbe00;
+        color: black;
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        
+    }
+
+    input[type="submit"]:hover{
+        background-color: black;
+        color: #ffbe00;
+    }
+
+
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <div>
+            <h1>Inicio de sessão</h1>
+            <p>Inicia sessão e aproveita todas as novidades da ECOM</p>
+        </div>
+        <div>
+            <label for="txtEmail">Email:</label><br>
+            <input type="email" name="txtEmail" id="txtEmail" required>
+        </div><br>
+        <div>
+            <label for="txtPassword">Password:</label><br>
+            <input type="password" name="txtPassword" id="txtPassword" required>
+        </div><br>
+        <div>
+            <input type="submit" value="Iniciar sessão">
+        </div>
+    </form>
+</body>
+</html>

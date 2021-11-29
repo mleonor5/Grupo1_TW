@@ -26,12 +26,6 @@ li{
     width: 150px;
 }
 
-#user{
-    filter: invert(100%);
-    width: 30px;
-    height: 30px;
-}
-
 a{
     text-decoration: none;
     color: black;

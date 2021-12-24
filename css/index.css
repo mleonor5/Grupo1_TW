@@ -8,8 +8,6 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*************************************MENU*************************************/
-
 .navbar{
     display: flex;
     align-items: center;
@@ -64,11 +62,60 @@ a:hover{
     color: #ffbe00;
 }
 
+h2{
+    text-align: center;
+    color: #ffbe00;
+}
+
+.containerDestaque{
+    display: flex;
+}
+
+.textDestaque{
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.desconto{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-size: 60px;
+}
+
+.textDesconto{
+    font-size: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 80px;
+    color: #949494;
+}
+
+.btnJoalharia{
+    background-color: #313131;
+    color: #ffbe00;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.btnJoalharia:hover{
+    text-decoration: none;
+}
+
+#imgDestaque{
+    width: 100%;
+    height: 100%;
+}
+
+.novidades{
+    padding-top: 20px;
+    font-size: 20px;
+}
 /*Media Query para o menu*/
 
 @media only screen and (max-width: 800px){
     
-    /*************************************MENU*************************************/
     nav ul{
         position: absolute;
         top: 70px;
@@ -94,4 +141,35 @@ a:hover{
     #menuIcon:hover{
         color: #ffbe00;
     }
-}
+
+    .desconto{
+        padding-top: 70px;
+        padding-bottom: 50px;
+        font-size: 25px;
+    }
+    
+    .textDesconto{
+        padding-right: 20px;
+        padding-left: 20px;
+        color: #949494;
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+
+    .btnJoalharia{
+        background-color: #313131;
+        color: #ffbe00;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+    
+    .btnJoalharia:hover{
+        text-decoration: none;
+    }
+
+    .novidades{
+        font-size: 16px;
+    }
+} 

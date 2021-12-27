@@ -108,9 +108,47 @@ h2{
     height: 100%;
 }
 
-.novidades{
+.title{
     padding-top: 20px;
-    font-size: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.containerNovidades{
+    justify-content: center;
+    display: flex;
+}
+
+.col-3{
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.col-3 img{
+    border-radius: 10px;
+    max-width: 325px;
+    max-height: 300px;
+}
+
+.descricao{
+    text-align: center;
+}
+
+.classificacao i{
+    color: #ffbe00;
+}
+
+span{
+    color: #ffbe00;
+}
+
+h5{
+    color: #949494;
+}
+
+.price{
+    color: #313131;
 }
 /*Media Query para o menu*/
 
@@ -169,7 +207,17 @@ h2{
         text-decoration: none;
     }
 
-    .novidades{
-        font-size: 16px;
+    .title{
+        font-size: 20px;
     }
-} 
+
+    .col-3{
+        padding: 10px;
+    }
+
+    .col-3 img{
+        border-radius: 10px;
+        max-width: 225px;
+        max-height: 200px;
+    }
+}

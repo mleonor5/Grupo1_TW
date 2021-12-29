@@ -4,19 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/registo.css">
     <title>Registo do utilizador</title>
 </head>
 <body>
+    <!------------------------------------MENU------------------------------------>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo" id="logo">
+                <img src="./img/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuList">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="#novidades">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="">Categorias</a>
+                    </li>
+                    <li>
+                        <a href="">Contactos</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </a>
+            <a href="carrinho.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true" id="cart"></i>
+            </a>
+            <i class="fa fa-bars" aria-hidden="true" id="menuIcon" onclick="menu()"></i>
+        </div>
+    </div>
+
+    <!-------------------------------------- Formulario do registo ------------------------------------->
     <form action="" id="form">
-        <h1>Cria a sua conta</h1><br>
+        <h1>Registar na ECOM </h1><br>
         <div>
             <label for="txtName">Nome:</label>
-            <input type="text" name="txtname" id="txtName">
+            <input type="text" name="txtname" id="txtName" placeholder=" seu nome" required>
         </div><br>
         <div>
             <label for="txtEmail">Email:</label>
-            <input type="email" name="txtEmail" id="txtEmail">
+            <input type="email" name="txtEmail" id="txtEmail" placeholder="seu email" required>
         </div><br>
         <div>
             Género:
@@ -25,23 +59,33 @@
         </div><br>
         <div>
             <label for="txtMorada">Morada:</label>
-            <input type="text" name="txtMorada" id="txtMorada">
+            <input type="text" name="txtMorada" id="txtMorada" placeholder=" sua morada" required>
         </div><br>
         <div>
             <label for="txtNumber">Telemóvel:</label>
-            <input type="number" name="txtNumber" id="txtNumber">
+            <input type="number" name="txtNumber" id="txtNumber" placeholder="seu número" required>
         </div><br>
         <div>
             <label for="txtPassword">Palavra-passe:</label>
-            <input type="password" name="txtPassword" id="txtPassword" minlength="8" placeholder="minimo 8 caracteres">
+            <input type="password" name="txtPassword" id="txtPassword" minlength="8" maxlength="15" placeholder="password" required>
+        </div><br>
+        <div id="passRecomendacao">
+            <h4>Segue os seguintes critérios para criar a sua password:</h4>
+            <p id="">- Não utilizes as suas passwords antiga</p>
+            <p>- Inclui entre 8 a 15 caracteres</p>
+            <p>- Não escolhas passwords que sejam fáceis de adivinhar</p>
+            <p>- Inclui pelo menos uma letra maiúscula, um número e um carácter 
+                especial (&,%,$, etc.)
+            </p>
         </div><br>
         <div>
-            <label for="txtPassword">Repetir a palavra-passe:</label>
-            <input type="password" name="txtPassword" id="txtPassword">
+            <input type="checkbox" name="aceitoTermos" id="" required><label for="aceitoTermos">Aceito os termos e condiçoes</label>
         </div><br>
         <div>
             <input type="submit" value="Submeter">
         </div>
     </form>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

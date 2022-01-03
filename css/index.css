@@ -108,6 +108,10 @@ h2{
     height: 100%;
 }
 
+.novidades{
+    padding-bottom: 30px;
+}
+
 .title{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -127,12 +131,13 @@ h2{
 
 .col-3 img{
     border-radius: 10px;
-    max-width: 325px;
-    max-height: 300px;
+    max-width: 300px;
+    max-height: 275px;
 }
 
 .descricao{
     text-align: center;
+    padding: 5px;
 }
 
 .classificacao i{
@@ -149,6 +154,93 @@ h5{
 
 .price{
     color: #313131;
+}
+
+.containerCategorias{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h4{
+    color: #949494;
+}
+
+#arrowButton{
+    background-color: white;
+    border: none;
+    color: #ffbe00;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+h3{
+    color: #ffbe00;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contacto .containerContactos{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    background-color: #f5f5f5;
+}
+
+.box{
+    text-align: center;
+}
+
+form{
+    padding: 30px;
+}
+
+input{
+    border: none;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ffbe00;
+    margin: auto;
+}
+
+input:focus{
+    border: 2px solid #ffbe00;
+}
+
+label{
+    color: #313131;
+}
+
+.box i{
+    color: #313131;
+}
+
+textarea{
+    box-sizing: border-box;
+    border: 2px solid #ffbe00;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+}
+
+#info{
+    text-align: center;
+    margin: auto;
+}
+
+#form{
+    margin: auto;
+}
+
+footer{
+    background-color: #313131;
+}
+
+footer p{
+    color: #ffbe00;
+    text-align: center;
+}
+
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 /*Media Query para o menu*/
 
@@ -220,4 +312,13 @@ h5{
         max-width: 225px;
         max-height: 200px;
     }
-}
+
+    .contacto .containerContactos{
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+    }
+
+    textarea{
+        width: 200px;
+    }
+} 

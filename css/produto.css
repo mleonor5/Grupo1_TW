@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.containerProduto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.descricaoProduto{
+    text-align: center;
+    margin: auto;
+}
+
+.descricaoProduto h2{
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.descricaoProduto h4{
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+
+.descricaoProduto #descricao{
+    text-justify: auto;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.descricaoProduto .detalhes{
+    text-justify: auto;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.descricaoProduto .classificacao{
+    padding-bottom: 10px;
+}
+
+.descricaoProduto .price{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.produto{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+}
+
+#imgProduto{
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.col-2{
+    margin: auto;
+}
+
+p{
+    color: #313131;
+}
+
+p i{
+    color: #ffbe00;
+}
+
+.descricao .price{
+    padding-bottom: 20px;
+}
+
+#btnAddCart{
+    background-color: #313131;
+    border: #313131;
+    color: #ffbe00;
+    border-radius: 40px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btnAddCart i{
+    padding-right: 10px;
+}
+
+/*Media Query para o menu*/
+
+@media only screen and (max-width: 800px){
+    
+    #btnAddCart{
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    #imgProduto{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .descricaoProduto h2{
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+
+    .descricaoProduto h4{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .descricaoProduto #descricao{
+        text-justify: auto;
+        padding-bottom: 15px;
+        font-size: 13px;
+    }
+
+    .descricaoProduto .detalhes{
+        text-justify: auto;
+        padding-bottom: 15px;
+        font-size: 13px;
+    }
+
+    .descricaoProduto .classificacao{
+        padding-bottom: 10px;
+    }
+
+    .descricaoProduto .price{
+        padding-bottom: 20px;
+        font-size: 16px;
+    }
+}

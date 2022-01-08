@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom - Relógio Digital mulher</title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/produto.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!------------------------------------MENU------------------------------------>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo" id="logo">
+                <img src="./img/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuList">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#novidades">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#categorias">Categorias</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#contacto">Contactos</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </a>
+            <a href="carrinho.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true" id="cart"></i>
+            </a>
+            <i class="fa fa-bars" aria-hidden="true" id="menuIcon" onclick="menu()"></i>
+        </div>
+    </div>
+    <!------------------------------------PRODUTO------------------------------------>
+    <div class="containerProduto">
+        <div class="produto">
+            <img src="./img/Relogio1.jpeg" id="imgProduto">
+        </div>
+        <div class="descricaoProduto">
+            <h2>Relógio digital mulher</h2>
+            <p id="descricao">Relógio de pulso digital estilo vintage</p>
+            <h4>Detalhes do produto</h4>
+            <p class="detalhes">Tela do visor: Digital<br>
+                Profundidade de resistência à água: 3Bar<br>
+                Material do visor: Vidro<br>
+                Tamanho da bracelete: 18cm<br>
+            </p>
+            <div class="classificacao">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span>5</span>
+            </div>
+            <p class="price">4,58 €<p></p>
+            <button id="btnAddCart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Adicionar ao carrinho
+            </button>
+        </div>
+    </div>
+    <!------------------------------------PRODUTOS SEMELHANTES------------------------------------>
+    <h2 class="title">PRODUTOS SEMELHANTES</h2>
+    <div class="containerNovidades">
+        <div class="col-3">
+            <a href="./relogio2.html">
+                <img src="./img/Relogio2.jpeg" alt="Eletrodoméstico 2">
+            </a>
+            <div class="descricao">
+                <h5>Relógio quartzo masculino</h5>
+                <div class="classificacao">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <span>4.5</span>
+                </div>
+                <p class="price">3,56 €</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <a href="./relogio3.html">
+                <img src="./img/Relogio3.jpeg" alt="Eletrodoméstico 3">
+            </a>
+            <div class="descricao">
+                <h5>Relógio simples masculino</h5>
+                <div class="classificacao">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <span>3</span>
+                </div>
+                <p class="price">3,46 €</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <a href="./relogio4.html">
+                <img src="./img/Relogio4.jpeg" alt="Eletrodoméstico 3">
+            </a>
+            <div class="descricao">
+                <h5>Relógio luxuoso mulher</h5>
+                <div class="classificacao">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <span>2.5</span>
+                </div>
+                <p class="price">6,84 €</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!------------------------------------FOOTER------------------------------------>
+    <footer>
+        <div class="footer">
+            <p>&#169; Copyright 2021 - all data belongs to Ecom </p>
+            <p>Ecom.com</p>
+        </div>
+    </footer>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>

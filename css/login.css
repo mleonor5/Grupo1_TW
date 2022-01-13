@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#f5f5f5;
+}
+
+.hero{
+    margin-top: 125px;
+}
+
+.hero-register{
+    margin-top: 40px;
+}
+
+#form{
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 450px;
+    height: 400px;
+    background-color:#949494;
+}
+
+.hero-register #form{
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 450px;
+    height: 590px;
+    background-color:#949494;
+}
+
+#txtEmail, #txtName, #txtPassword, #txtMorada, #txtNumber{
+    border: none;
+    border-radius: 4px;
+    width: 50%;
+    height: 20px;
+}
+
+#login, #submit{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #ffbe00;
+    color: black;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+#login:hover{
+    background-color: black;
+    color: #ffbe00;
+    border: none;
+}
+
+h1{
+    color: #ffbe00;
+}
+
+p{
+    color: #313131;
+}

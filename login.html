@@ -5,75 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Login</title>
-    <style>
-        body{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin: 0;
-            left: 0;
-            right: 0;
-            padding: 0;
-            box-sizing: border-box;
-            align-items: center;
-            background-color:#f5f5f5;
-        }
-        #form{
-            position: relative;
-            text-align: center;
-            justify-content: center;
-            float: left;
-            left: 300px;
-            top: 20px;
-            border-radius: 5px;
-            width: 450px;
-            height: 350px;
-            background-color:#949494;
-        }
-
-        input[type=email]{
-            border: none;
-            border-radius: 4px;
-            width: 50%;
-            height: 7vh;
-        }
-
-        input[type=email]:focus {
-            background-color: lightblue;
-            border: none;
-        }
-
-        input[type=password]{
-            border: none;
-            border-radius: 4px;
-            width: 50%;
-            height: 7vh;
-        }
-        input[type=password]:focus {
-                background-color: lightblue;
-                border: none;
-        }
-
-        input[type="submit"]{
-            border: 2px solid white;
-            border-radius: 5px;
-            background-color: #ffbe00;
-            color: black;
-            width: 100px;
-            height: 40px;
-            cursor: pointer;
-            border: none;
-            
-        }
-
-        input[type="submit"]:hover{
-            background-color: black;
-            color: #ffbe00;
-            border: none;
-        }
-
-
-    </style>
 </head>
 <body>
     <!------------------------------------MENU------------------------------------>
@@ -85,16 +19,16 @@
             <nav>
                 <ul id="menuList">
                     <li>
-                        <a href="">Home</a>
+                        <a href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#novidades">Novidades</a>
+                        <a href="./index.html#novidades">Novidades</a>
                     </li>
                     <li>
-                        <a href="">Categorias</a>
+                        <a href="./index.html#categorias">Categorias</a>
                     </li>
                     <li>
-                        <a href="">Contactos</a>
+                        <a href="./index.html#contacto">Contactos</a>
                     </li>
                 </ul>
             </nav>
@@ -107,22 +41,33 @@
             <i class="fa fa-bars" aria-hidden="true" id="menuIcon" onclick="menu()"></i>
         </div>
     </div>
-    <form action="index.html" id="form" onsubmit="return login()">
-        <div>
-            <h1>Inicio de sessão</h1><br>
-            <p>Inicia sessão e aproveita todas as novidades da ECOM</p>
-        </div><br>
-        <div>
-            <label for="txtEmail">Email:</label><br>
-            <input type="email" name="txtEmail" id="txtEmail" required>
-        </div><br>
-        <div>
-            <label for="txtPassword">Password:</label><br>
-            <input type="password" name="txtPassword" id="txtPassword" required>
-        </div><br>
-        <div>
-            <input type="submit" value="Iniciar sessão">
+    <!------------------------------------FORM LOGIN------------------------------------>
+    <div class="hero">
+        <div class="form">
+            <form action="index.html" id="form" onsubmit="return login()">
+                <div>
+                    <h1>Inicio de sessão</h1><br>
+                    <p>Inicia sessão e aproveita todas as novidades da ECOM</p>
+                    <br>
+                    <label for="txtEmail">Email</label>
+                    <br>
+                    <input type="email" name="txtEmail" id="txtEmail" required>
+                    <br>
+                    <br>
+                    <label for="txtPassword">Password</label>
+                    <br>
+                    <input type="password" name="txtPassword" id="txtPassword" required>
+                    <br>
+                    <br>
+                    <a href="./registo.html">Ainda não tem conta? Criar conta</a>
+                    <br>
+                    <br>
+                    <input type="submit" value="Iniciar sessão" id='login'>
+            </form>
         </div>
-    </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

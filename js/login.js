@@ -1,7 +1,7 @@
 let utilizadores = [
-    {"login": "", "marialeonor@gamil.com": "leonormaria"},
-    {"login": "fabiofernandes@gmail.com", "senha": "fernandes"},
-    {"login": "joaorocha@gmail.com", "senha": "rochajoao"},
+    {login: "marialeonor@gamil.com", senha: "leonormaria"},
+    {login: "fabiofernandes@gmail.com", senha: "fernandes"},
+    {login: "joaorocha@gmail.com", senha: "rochajoao"},
 ];
 
 function login() {

@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestão de Conta do utilizador</title>
+    <title>Ecom - Editar conta</title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!------------------------------------MENU------------------------------------>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo" id="logo">
+                <img src="./img/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuList">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#novidades">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="#categorias">Categorias</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contactos</a>
+                    </li>
+                    <li>
+                        <a href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="./GCU.html">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </a>
+            <a href="carrinho.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true" id="cart"></i>
+            </a>
+            <i class="fa fa-bars" aria-hidden="true" id="menuIcon" onclick="menu()"></i>
+        </div>
+    </div>
     
+    <script src="./js/index.js"></script>
 </body>
 </html>

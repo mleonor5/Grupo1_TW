@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecom - Editar conta</title>
     <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -43,6 +44,44 @@
             </a>
             <i class="fa fa-bars" aria-hidden="true" id="menuIcon" onclick="menu()"></i>
         </div>
+    </div>
+
+    <!-------------------------------------- Formulario do registo ------------------------------------->
+    <div class="hero-register">
+        <form action="login.html" id="form" class="editUser" onsubmit="return registo()">
+            <h1>Registar na ECOM </h1><br>
+            <label for="txtName">Nome</label>
+            <br>
+            <input type="text" name="txtname" id="txtName" required>
+            <br>
+            <br>
+            <label for="txtEmail">Email</label>
+            <br>
+            <input type="email" name="txtEmail" id="txtEmail" required>
+            <br>
+            <br>
+            <label for="gender">Género</label>
+            <br>
+            <input type="text" name="gender" id="gender" requireds>
+            <br>
+            <br>
+            <label for="txtMorada">Morada</label>
+            <br>
+            <input type="text" name="txtMorada" id="txtMorada" required>
+            <br>
+            <br>
+            <label for="txtNumber">Telemóvel</label>
+            <br>
+            <input type="number" name="txtNumber" id="txtNumber" required>
+            <br>
+            <br>
+            <label for="txtPassword">Palavra-passe</label>
+            <br>
+            <input type="password" name="txtPassword" id="txtPassword" minlength="8" maxlength="15" required>
+            <br>
+            <br>
+            <input type="submit" value="Alterar dados" id="submit" class="edit">
+        </form>
     </div>
     
     <script src="./js/index.js"></script>

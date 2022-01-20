@@ -48,7 +48,7 @@
             <img src="./img/Produto1_1.jpeg" id="imgProduto">
         </div>
         <div class="descricaoProduto">
-            <h2>Caneta Tinteiro de madeira</h2>
+            <h2 id="nomeProduto">Caneta Tinteiro de madeira</h2>
             <p id="descricao">Caneta tinteiro de madeira para caligrafia fina</p>
             <h4>Detalhes do produto</h4>
             <p class="detalhes">Caneta tinteiro de madeira <br>
@@ -65,9 +65,9 @@
                 <i class="fa fa-star-half-o" aria-hidden="true"></i>
                 <span>4.5</span>
             </div>
-            <p class="price">3,16 €<p></p>
+            <p id="price">3,16 €<p></p>
             <button id="btnAddCart">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Adicionar ao carrinho
+                <i class="fa fa-shopping-cart" aria-hidden="true" id="btnAdd" onclick="return carrinho()"></i> Adicionar ao carrinho
             </button>
         </div>
     </div>
@@ -136,5 +136,6 @@
     </footer>
     
     <script src="./js/index.js"></script>
+    <script src="./js/carrinho.js"></script>
 </body>
 </html>

@@ -4,21 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/produto.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Carrinho de Compras</title>
     <style>
         body{
             text-align: center;
             
         }
-
-        a{
-            color: red;
-        }
     </style>
 </head>
 <body>
+    <!------------------------------------MENU------------------------------------>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo" id="logo">
+                <img src="./img/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuList">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#novidades">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="#categorias">Categorias</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contactos</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="./login.html">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </a>
+            <a href="carrinho.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true" id="cart"></i>
+            </a>
+            <i class="fa fa-bars" aria-hidden="true" id="menuIcon" onclick="menu()"></i>
+        </div>
+    </div>
+    
     <h1>Carrinho de compras</h1><br><br>
-    <p>O teu carrinho de compras está vazio!</p>
-    <a href="index.html">Volta a página inicial</a>
+    <table>
+        <tr>
+            <th>PRODUTO</th>
+            <th>PREÇO</th>
+            <th>QUANTIDADE</th>
+        </tr>
+    </table>
+    
+    <script src="./js/carrinho.js"></script>
 </body>
 </html>

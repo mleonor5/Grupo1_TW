@@ -1,21 +1,26 @@
 let utilizadores = [
-    {login: "marialeonor@gamil.com", senha: "leonormaria"},
+    {login: "marialeonor@gmail.com", senha: "leonormaria"},
     {login: "fabiofernandes@gmail.com", senha: "fernandes"},
     {login: "joaorocha@gmail.com", senha: "rochajoao"},
 ];
 
-function login() {
-    let email = document.getElementsById('txtEmail')[0].value.toLowerCase();
-    let password = document.getElementsById('txtPassword')[0].value;
+let form = document.querySelector('.form')
 
-    for (let u in utilizadores) {
-        let us = utilizadores[u];
-        if (us.login === email && us.password === password) {
-            alert('Início de sessão efetuado com sucesso!')
-            window.location = "index.html";
-            return true;        
+form.addEventListener('submit', function(event){
+
+    let email = document.querySelector('#txtEmail').value
+    let pass = document.querySelector('#txtPassword').value
+
+    for (let user in utilizadores){
+        if(utilizadores[user].login == email && utilizadores[user].senha == pass){
+            alert(`Bem-vindo ${email}`)
+            window.location = '../index.html'
+            break
+        }else{
+            alert(`Dados incorretos, tente novamente`)
         }
     }
-    alert("Dados incorretos, tente novamente.");
-    return false;
-}
+
+    event.preventDefault()
+
+})

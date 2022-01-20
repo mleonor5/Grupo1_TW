@@ -34,7 +34,7 @@ body{
     background-color:#949494;
 }
 
-#txtEmail, #txtName, #txtPassword, #txtMorada, #txtNumber{
+#txtEmail, #txtName, #txtPassword, #txtMorada, #txtNumber, #gender{
     border: none;
     border-radius: 4px;
     width: 50%;

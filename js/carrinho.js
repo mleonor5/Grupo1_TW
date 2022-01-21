@@ -1,19 +1,18 @@
-function carrinho() {
-    
-    let nome = document.querySelector("#nomeProduto").value
-    let descricao = document.querySelector("#descricao").value
-    let preco = document.querySelector("#price").value
+let btnAdd = document.addEventListener('click', function(event) {
 
-    let table = document.querySelector("table")
+    let imgProduto = document.querySelector('#imgProduto').value;
+    let productName = document.querySelector('#nomeProduto').value;
+    let productPrice = document.querySelector('#price').value;
+    let quantity = 0
+
+    let table = document.querySelector('#table')
 
     table.innerHTML += `
-    
         <tr>
-            <td>${nome}</td>
-            <td>${descricao}</td>
-            <td>${preco}</td>
+            <td>${imgProduto} ${productName}</td>
+            <td>${productPrice}</td>
+            <td>${quantity}</td>
         </tr>
     `
-    
-
-}
+    event.preventDefault();
+})

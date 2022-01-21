@@ -66,3 +66,9 @@ h1{
 p{
     color: #313131;
 }
+
+#textEdit{
+    padding-top: 30px;
+    font-size: 20px;
+    color: #ffbe00;
+}

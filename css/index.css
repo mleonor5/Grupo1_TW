@@ -229,6 +229,22 @@ textarea{
     margin: auto;
 }
 
+#opinionForm{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #ffbe00;
+    color: black;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: none; 
+}
+
+#opinionText{
+    padding-top: 20px;
+    color: #ffbe00;
+}
+
 footer{
     background-color: #313131;
 }

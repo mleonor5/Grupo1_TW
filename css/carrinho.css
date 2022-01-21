@@ -7,6 +7,7 @@
 h1{
     color: #ffbe00;
     padding-top: 50px;
+    text-align: center;
 }
 
 table{
@@ -18,4 +19,24 @@ table{
 
 th{
     color: #313131;
+}
+
+.button{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#btnPay{
+    margin: auto;
+    background-color: #313131;
+    border: #313131;
+    color: #ffbe00;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnPay:hover{
+    text-decoration: none;
 }

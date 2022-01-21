@@ -26,6 +26,23 @@ for(let produto in produtos){
             <td>
                 <button id="minus">-</button>${produtos[produto].quantity}<button id="plus">+</button>
             </td>
+            <td>
+                <button id="removeProduct">Remover Produto</button>
+            </td>
         </tr>
     `
 }
+
+let removeProduct = table.querySelector('#removeProduct')
+
+removeProduct.addEventListener('click', function(){
+    this.parentNode.parentNode.removeChild();
+})
+
+// for(let remove in removeProduct) {
+//     remove.addEventListener('click', function(event){
+//         table.deleteRow(remove);
+
+//         event.preventDefault();
+//     })
+// }

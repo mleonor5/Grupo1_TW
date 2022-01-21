@@ -1,18 +1,31 @@
-let btnAdd = document.addEventListener('click', function(event) {
+let produtos = [
+    {
+        nome: 'Mini triturador',
+        price: 17.69,
+        quantity: 1
+    },
+    {
+        nome: 'Adesivos decorativos',
+        price: 2.70,
+        quantity: 1
+    },
+    {
+        nome: 'Caneta Tinteiro de madeira',
+        price: 3.16,
+        quantity: 1
+    },
+]
 
-    let imgProduto = document.querySelector('#imgProduto').value;
-    let productName = document.querySelector('#nomeProduto').value;
-    let productPrice = document.querySelector('#price').value;
-    let quantity = 0
+let table = document.querySelector("#table")
 
-    let table = document.querySelector('#table')
-
+for(let produto in produtos){
     table.innerHTML += `
         <tr>
-            <td>${imgProduto} ${productName}</td>
-            <td>${productPrice}</td>
-            <td>${quantity}</td>
+            <td>${produtos[produto].nome}</td>
+            <td>${produtos[produto].price} €</td>
+            <td>
+                <button id="minus">-</button>${produtos[produto].quantity}<button id="plus">+</button>
+            </td>
         </tr>
     `
-    event.preventDefault();
-})
+}
